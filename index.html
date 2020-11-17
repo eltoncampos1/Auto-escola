@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá mundo </title>
+    <style>
+        .title {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="root2"></div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script>
+        ReactDOM.render(
+            React.createElement("h1",{ className:"title"}, "olá mundo!","olá react"),
+            document.getElementById('root')
+        );
+    </script>
+
+    <script type="text/babel">
+        ReactDOM.render(
+            <h1 className="title">
+                Olá mundo!
+                <br/>
+                <small>Olá React</small>
+            </h1>,
+            document.getElementById("root2")
+        )
+    </script>
+</body>
+</html>
