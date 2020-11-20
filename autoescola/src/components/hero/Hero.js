@@ -28,6 +28,7 @@ const Content = styled.div`
   ul {
     list-style: none;
     padding-left: 0;
+    margin-bottom: 20px;
   }
 
   li::before {
