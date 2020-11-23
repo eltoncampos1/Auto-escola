@@ -9,8 +9,10 @@ import Button from "../../button/Button";
 import Feature from "../../feature/Feature";
 import Grid from "../../grid/Grid";
 import Section from "../../section/Section";
+import Footer from "../../footer/Footer";
 
 import HeroImg from "../../../assets/car-bg.jpg";
+import AboutVid from "../../../assets/about.mp4";
 
 const Home = () => (
   <>
@@ -48,6 +50,41 @@ const Home = () => (
         </Feature>
       </Grid>
     </Section>
+
+    <Section inverse>
+      <Heading>
+        <h2>Conheça nosso serviços</h2>
+      </Heading>
+    </Section>
+
+    <Section>
+      <Grid md={2}>
+        <div>
+          <Heading>
+            <h2>Autoscola XXXX</h2>
+          </Heading>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Cupiditate, atque unde. Repellendus dolorum fugit tenetur? Sapiente
+            reiciendis placeat labore consectetur? Explicabo et iusto minima
+            deserunt eligendi, hic earum illo excepturi.
+          </p>
+          <div>
+            <Button color="primary">Saiba mais</Button>
+          </div>
+        </div>
+        <div>
+          <video src={AboutVid} width="100%" autoPlay loop />
+        </div>
+      </Grid>
+    </Section>
+
+    <Section inverse>
+      <Heading>
+        <h2>Dúvidas recorrentes</h2>
+      </Heading>
+    </Section>
+    <Footer />
   </>
 );
 
