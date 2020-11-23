@@ -10,9 +10,48 @@ import Feature from "../../feature/Feature";
 import Grid from "../../grid/Grid";
 import Section from "../../section/Section";
 import Footer from "../../footer/Footer";
+import ProductGrid from "../../productGrid/ProductGrid";
 
 import HeroImg from "../../../assets/car-bg.jpg";
 import AboutVid from "../../../assets/about.mp4";
+import HabCar from "../../../assets/Hab-car.jpg";
+import Carrer from "../../../assets/Carrer.jpg";
+import Moto from "../../../assets/moto.jpg";
+import Caminhao from "../../../assets/caminhao.jpg";
+import Aula from "../../../assets/class.jpg";
+
+const products = [
+  {
+    id: 1,
+    title: "Primeira Habilitação Carro e Moto",
+    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    image: Carrer,
+  },
+  {
+    id: 2,
+    title: "Primeira Habilitação Carro ",
+    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    image: HabCar,
+  },
+  {
+    id: 3,
+    title: "Primeira Habilitação Moto",
+    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    image: Moto,
+  },
+  {
+    id: 4,
+    title: "Mudança de categoria Caminhão",
+    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    image: Caminhao,
+  },
+  {
+    id: 5,
+    title: "Aulas Avulsas",
+    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    image: Aula,
+  },
+];
 
 const Home = () => (
   <>
@@ -54,6 +93,7 @@ const Home = () => (
     <Section inverse>
       <Heading>
         <h2>Conheça nosso serviços</h2>
+        <ProductGrid products={products} />
       </Heading>
     </Section>
 
