@@ -3,27 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@storybook/addon-actions": "^6.1.0",
-    "@storybook/addon-docs": "^6.1.0",
-    "@storybook/addon-essentials": "^6.1.0",
-    "@storybook/addon-knobs": "^6.1.0",
-    "@storybook/addon-links": "^6.1.0",
-    "@storybook/addon-viewport": "^6.1.0",
-    "@storybook/node-logger": "^6.1.0",
+    "@storybook/addon-actions": "^6.1.6",
+    "@storybook/addon-docs": "^6.1.6",
+    "@storybook/addon-essentials": "^6.1.6",
+    "@storybook/addon-knobs": "^6.1.6",
+    "@storybook/addon-links": "^6.1.6",
+    "@storybook/addon-viewport": "^6.1.6",
+    "@storybook/node-logger": "^6.1.6",
     "@storybook/preset-create-react-app": "^3.1.5",
-    "@storybook/react": "^6.1.0",
+    "@storybook/react": "^6.1.6",
     "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.2.0",
+    "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.1.10",
+    "babel-loader": "^8.2.1",
     "chromatic": "^5.4.0",
     "jest-styled-components": "^7.0.3",
-    "prettier": "^2.1.2",
+    "prettier": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
-    "react-scripts": "4.0.0",
+    "react-scripts": "4.0.1",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.0.1"
   },
@@ -64,7 +65,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/core": "^7.12.9",
     "react-is": "^17.0.1"
   }
 }
