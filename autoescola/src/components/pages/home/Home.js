@@ -11,6 +11,8 @@ import Grid from "../../grid/Grid";
 import Section from "../../section/Section";
 import Footer from "../../footer/Footer";
 import ProductGrid from "../../productGrid/ProductGrid";
+import Accordion from "../../accordion/Accordion";
+import AccordionGroup from "../../accordion/AccordionGroup";
 
 import HeroImg from "../../../assets/car-bg.jpg";
 import AboutVid from "../../../assets/about.mp4";
@@ -123,6 +125,20 @@ const Home = () => (
       <Heading>
         <h2>Dúvidas recorrentes</h2>
       </Heading>
+      <AccordionGroup>
+        <Accordion title="Como eu renovo minha CNH">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum totam
+          nulla ex dolorum suscipit optio doloribus? Et animi
+        </Accordion>
+        <Accordion title="Como eu faço a mudança de categoria">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum totam
+          nulla ex dolorum suscipit optio doloribus? Et animi
+        </Accordion>
+        <Accordion title="Foi multado, e agora?">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum totam
+          nulla ex dolorum suscipit optio doloribus? Et animi
+        </Accordion>
+      </AccordionGroup>
     </Section>
     <Footer />
   </>
