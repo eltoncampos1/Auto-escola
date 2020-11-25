@@ -41,14 +41,15 @@ CardMedia.propTypes = {
   image: PropTypes.string,
 };
 
-const StyledCard = styled.div`
-  background-color: #fff;
-  border-radius: 4px;
-  overflow: hidden;
-`;
 //#endregion
 
 //#region Card
+const StyledCard = styled.div`
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  overflow: hidden;
+`;
 const Card = ({ children }) => <StyledCard>{children}</StyledCard>;
 
 Card.defaultProps = {
