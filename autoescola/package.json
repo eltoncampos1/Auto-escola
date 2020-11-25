@@ -1,6 +1,6 @@
 {
   "name": "autoescola",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@storybook/addon-actions": "^6.1.6",
@@ -16,7 +16,6 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.1.10",
-    "babel-loader": "8.1.0",
     "chromatic": "^5.4.0",
     "jest-styled-components": "^7.0.3",
     "prettier": "^2.2.0",
