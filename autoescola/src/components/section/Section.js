@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 
 import Container from "../container/Container";
+import { breakAt, BreakPointSizes } from "../../styles/BreakPoints";
 
 const Content = styled.div`
   padding: 40px 0;
@@ -11,6 +12,10 @@ const Content = styled.div`
     css`
       background-color: #f7f7f7;
     `}
+
+  ${breakAt(BreakPointSizes.md)} {
+    padding: 80px 0;
+  }
 
   h2 {
     margin-top: 0;
