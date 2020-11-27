@@ -1,6 +1,7 @@
 # Auto Escola
 
 ![CircleCI](https://img.shields.io/circleci/build/github/eltoncampos1/projetos-reactJS)
+![Codecov](https://img.shields.io/codecov/c/github/eltoncampos1/projetos-reactJS)
 
 Este projeto foi desenvolvido com as tecnologias : ReactJs e jS;
 
