@@ -1,6 +1,6 @@
 {
   "name": "react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@storybook/addon-actions": "^6.1.6",
@@ -37,7 +37,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public --no-dll",
     "build-storybook": "build-storybook -s public --no-dll",
-    "chromatic": "chromatic --project-token hxlm5wsjw9n",
+    "chromatic": "chromatic --exit-zero-on-changes ",
     "lint": "eslint src/**/*.js"
   },
   "eslintConfig": {
