@@ -1,5 +1,5 @@
 {
-  "name": "autoescola",
+  "name": "react",
   "version": "0.1.1",
   "private": true,
   "dependencies": {
@@ -33,11 +33,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "cover": "yarn test -- --coverage --watchAll=false",
+    "cover": "yarn test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public --no-dll",
     "build-storybook": "build-storybook -s public --no-dll",
-    "chromatic": "chromatic --project-token hxlm5wsjw9n"
+    "chromatic": "chromatic --project-token hxlm5wsjw9n",
+    "lint": "eslint src/**/*.js"
   },
   "eslintConfig": {
     "extends": [
