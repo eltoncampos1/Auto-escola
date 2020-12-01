@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import PropTypes from "prop-types";
 
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
@@ -111,12 +112,15 @@ const Home = () => (
             reiciendis placeat labore consectetur? Explicabo et iusto minima
             deserunt eligendi, hic earum illo excepturi.
           </p>
+          <br />
           <div>
-            <Button color="primary">Saiba mais</Button>
+            <Button as={Link} to="/sobre" color="primary">
+              Saiba mais
+            </Button>
           </div>
         </div>
         <div>
-          <video src={AboutVid} width="100%" autoPlay loop muted />
+          <video src={AboutVid} width="100%" autoPlay playsInline loop muted />
         </div>
       </Grid>
     </Section>

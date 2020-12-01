@@ -1,6 +1,7 @@
 import React from "react";
 import { addDecorator, addParameters } from "@storybook/react";
 import { select } from "@storybook/addon-knobs";
+import { MemoryRouter as Router } from "react-router-dom";
 
 import GlobalStyle from "../src/styles/GlobalStyle";
 import ThemeProvider, { ThemeNames } from "../src/styles/ThemeProvider";
@@ -10,12 +11,12 @@ export const parameters = {
 };
 
 addDecorator((storyFn) => (
-  <>
+  <Router>
     <ThemeProvider theme={select("Theme", ThemeNames, ThemeNames.light)}>
       <GlobalStyle />
       {storyFn()}
     </ThemeProvider>
-  </>
+  </Router>
 ));
 
 const viewports = {
