@@ -54,7 +54,7 @@ CardMedia.propTypes = {
 const StyledMediaDescription = styled.div`
   flex: 1;
   align-self: flex-end;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: ${(props) => props.theme.colors.border};
   padding: 8px 16px;
   color: #fff;
   text-align: center;
