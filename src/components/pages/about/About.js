@@ -7,9 +7,17 @@ import Heading from "../../heading/Heading";
 import Section from "../../section/Section";
 import Grid from "../../grid/Grid";
 import Footer from "../../footer/Footer";
+import Card, { CardMedia, CardMediaDescription } from "../../card/Card";
 
 import HeroImg from "../../../assets/car-bg.jpg";
 import AboutImg from "../../../draws/About";
+
+import instImg1 from "../../../assets/instructors/inst1.png";
+import instImg2 from "../../../assets/instructors/inst2.png";
+import instImg3 from "../../../assets/instructors/inst3.png";
+import instImg4 from "../../../assets/instructors/inst4.png";
+import instImg5 from "../../../assets/instructors/inst5.png";
+import instImg6 from "../../../assets/instructors/inst6.png";
 
 const ImageContainer = styled.div`
   svg {
@@ -19,6 +27,15 @@ const ImageContainer = styled.div`
     color: ${(props) => props.theme.colors.primary.main};
   }
 `;
+
+const instructors = [
+  { id: 1, name: "Intrutor(a) 1", avatar: instImg1 },
+  { id: 2, name: "Intrutor(a) 2", avatar: instImg2 },
+  { id: 3, name: "Intrutor(a) 3", avatar: instImg3 },
+  { id: 4, name: "Intrutor(a) 4", avatar: instImg4 },
+  { id: 5, name: "Intrutor(a) 5", avatar: instImg5 },
+  { id: 6, name: "Intrutor(a) 6", avatar: instImg6 },
+];
 
 const About = () => (
   <>
@@ -36,6 +53,7 @@ const About = () => (
             natus soluta quos quo, blanditiis sapiente nesciunt omnis ab
             exercitationem ut!
           </p>
+          <br />
 
           <p>
             Quisquam, natus illo rerum qui recusandae quod? Asperiores maxime
@@ -44,12 +62,16 @@ const About = () => (
             quas repellat! Excepturi, nihil voluptates.
           </p>
 
+          <br />
+
           <p>
             Ratione enim libero distinctio ex recusandae nesciunt nisi quaerat
             dolor! Non labore pariatur veritatis maxime? Sapiente aut atque nisi
             harum velit? Commodi quam atque consectetur perspiciatis maiores
             cupiditate, iusto id.
           </p>
+
+          <br />
 
           <ul>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
@@ -101,6 +123,18 @@ const About = () => (
       <Heading>
         <h2>Conheça nosso professores</h2>
       </Heading>
+
+      <Grid sm={2} md={3} lg={4}>
+        {instructors.map((instructor) => (
+          <Card key={instructor.id}>
+            <CardMedia image={instructor.avatar}>
+              <CardMediaDescription>
+                <h5>{instructor.name}</h5>
+              </CardMediaDescription>
+            </CardMedia>
+          </Card>
+        ))}
+      </Grid>
     </Section>
     <Footer />
   </>
